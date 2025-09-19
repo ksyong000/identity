@@ -145,7 +145,7 @@ body {
     background: #fff;
     padding: 30px 20px 0;
     border-radius: 20px;
-    height: calc(100vh - 320px);
+    height: calc(100vh - 280px);
     position: relative;
 }
 
