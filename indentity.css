@@ -149,6 +149,16 @@ body {
     position: relative;
 }
 
+.id_content .bg {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.03;
+    z-index: 0;
+}
+
 .id_content .img {
     display: flex;
     align-items: center;
