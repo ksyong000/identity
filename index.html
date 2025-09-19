@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="https://gav24.netlify.app/indentity.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        // 페이지 로드 후 약간의 스크롤을 실행하여 주소창 숨김 유도
         window.addEventListener("load", function () {
-            setTimeout(function () {
-                window.scrollTo(0, 1);
-            }, 0);
+            // 페이지 로드 후 즉시 60px 스크롤
+            window.scrollTo(0, 60);
         });
     </script>
     <title>정부24</title>
