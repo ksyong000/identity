@@ -184,6 +184,8 @@ body {
 
 .id_content .txt_box .txt p:not(.number) {
     font-weight: 400;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 .id_content .date_location {
@@ -196,11 +198,11 @@ body {
 
 .id_content .date_location span {
     font-weight: 800;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .id_content .date_location p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
 }
 
