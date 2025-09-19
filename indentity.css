@@ -173,12 +173,12 @@ body {
 }
 
 .id_content .txt_box .txt strong {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
 }
 
 .id_content .txt_box .txt p.number {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 800;
 }
 
@@ -195,7 +195,7 @@ body {
 }
 
 .id_content .date_location span {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 12px;
 }
 
