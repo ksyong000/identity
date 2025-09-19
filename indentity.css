@@ -71,22 +71,28 @@ body {
     display: flex;
     align-items: center;
     height: 60px;
+    position: relative;
 }
 
 .id_header .back_btn {
     letter-spacing: -0.5px;
+    font-size: 15px;
 }
 
 .id_header .back_btn span {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .id_header .logo {
     font-weight: 700;
     display: flex;
     align-items: center;
-    margin-left: 12px;
     letter-spacing: -1px;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
 }
 
 .id_header .logo img {
@@ -139,7 +145,7 @@ body {
     background: #fff;
     padding: 30px 20px 0;
     border-radius: 20px;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 230px);
     position: relative;
 }
 
@@ -147,6 +153,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 150px;
+    margin: 0 auto;
 }
 
 .id_content .inner_box {
@@ -166,12 +174,12 @@ body {
 
 .id_content .txt_box .txt strong {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .id_content .txt_box .txt p.number {
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .id_content .txt_box .txt p:not(.number) {
