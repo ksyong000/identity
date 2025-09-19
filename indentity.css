@@ -59,6 +59,7 @@ label {
 body {
     background: #DFECF2;
     font-family: 'NanumSquare', sans-serif;
+    overflow: hidden;
 }
 
 .id_root {
@@ -203,7 +204,7 @@ body {
 
 .id_content .date_location p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .fixed_bottom {
