@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+    <link rel="stylesheet" href="indentity.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>정부24</title>
+</head>
+
+<body>
+    <div class="id_root">
+        <div class="id_header">
+            <button class="back_btn"><span>◀</span> 정부24</button>
+            <div class="logo"><img src="imgs/Korea.svg" alt="">주민등록증 모바일 확인서비스</div>
+            <button class="menu_btn"><span></span></button>
+        </div>
+        <div class="id_content">
+            <div class="img"><img src="imgs/photo.png" alt=""></div>
+            <div class="inner_box">
+                <div class="txt_box">
+                    <div class="txt">
+                        <strong>강성용</strong>
+                        <p class="number">950104-<span class="password">1071015</span></p>
+                        <p>서울특별시 용산구 <span class="blind">효창원로86라길 47, 2층 1호(청파동1가)</span></p>
+                    </div>
+                    <fieldset>
+                        <label>
+                            <input role="switch" type="checkbox" />
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="date_location">
+                <span>2009.02.25</span>
+                <p>경기도 군포시장</p>
+            </div>
+        </div>
+        <button class="icon_arrow"><img src="imgs/icons_arrow.png" alt=""></button>
+        <div class="fixed_bottom">
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+            <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // 페이지 로드 시 .password 요소의 원래 텍스트 저장 후 마스킹 처리
+            $('.password').each(function () {
+                $(this).data('orig-text', $(this).text());
+                $(this).text('*******');
+            });
+
+            // .blind 요소는 초기 로드 시 숨김 처리 (css로도 처리됨)
+            $('.blind').css('display', 'none');
+
+            $('input[role="switch"]').on('change', function () {
+                if ($(this).is(':checked')) {
+                    // 스위치가 켜진 경우 - 원래 텍스트와 .blind 요소를 보여줌
+                    $('.password').each(function () {
+                        $(this).text($(this).data('orig-text'));
+                    });
+                    $('.blind').css('display', 'inline');
+                } else {
+                    // 스위치가 꺼진 경우 - 텍스트 마스킹 및 .blind 숨김
+                    $('.password').text('*******');
+                    $('.blind').css('display', 'none');
+                }
+            });
+            $('.back_btn,.icon_arrow').on('click', function () {
+                confirm('주민등록증 모바일 확인서비스를\n종료하시겠습니까?');
+            });
+        });
+    </script>
+</body>
+
+</html>
