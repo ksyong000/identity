@@ -256,6 +256,49 @@ body {
     width: 20px;
 }
 
+.id_popup_wrap {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.id_popup {
+    max-width: 400px;
+    width: 80vw;
+    border-radius: 12px;
+    background: #fff;
+    padding: 30px 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.id_popup p {
+    font-size: 14px;
+}
+
+.id_popup .id_btns {
+    margin-top: 20px;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+
+.id_popup .id_btns a+a {
+    margin-left: 10px;
+}
+
+.id_popup .id_btns a {
+    text-decoration: none;
+    color: green;
+    font-size: 14px;
+}
+
 @keyframes scroll-left {
     0% {
         transform: translateX(0)

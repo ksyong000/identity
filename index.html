@@ -54,6 +54,15 @@
             <p>주민등록증 위ㆍ변조 및 부정 사용 금지(위반시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p>
         </div>
     </div>
+    <div class="id_popup_wrap" style="display:none">
+        <div class="id_popup">
+            <p>주민등록증 모바일 확인서비스를<br>종료하시겠습니까?</p>
+            <div class="id_btns">
+                <a href="javascript:;" class="btn_cancel">취소</a>
+                <a href="https://plus.gov.kr" class="btn_submit">확인</a>
+            </div>
+        </div>
+    </div>
     <script>
         $(document).ready(function () {
             // 페이지 로드 시 .password 요소의 원래 텍스트 저장 후 마스킹 처리
@@ -78,10 +87,12 @@
                     $('.blind').css('display', 'none');
                 }
             });
-            $('.back_btn,.icon_arrow').on('click', function () {
-                if (confirm('주민등록증 모바일 확인서비스를\n종료하시겠습니까?')) {
-                    window.location.href = 'https://plus.gov.kr';
-                }
+            $('.icon_arrow, .back_btn').on('click', function () {
+                $('.id_popup_wrap').show();
+            });
+            // btn_cancel 클릭 시 id_popup 사라지게 함
+            $('.btn_cancel').on('click', function () {
+                $('.id_popup_wrap').hide();
             });
         });
     </script>
